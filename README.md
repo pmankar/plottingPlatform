@@ -15,9 +15,9 @@ You can easily ensure that the code satisfys this using a pre-commit-hook:
 
 
 # Requirements:
-	* PyYAML
-	* mysql-connector-python
-	* numpy
-	* scipy
-	* matplotlib
-	* shutil
+* PyYAML
+* mysql-connector-python
+* numpy
+* scipy
+* matplotlib
+* shutil
