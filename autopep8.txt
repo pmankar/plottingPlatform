@@ -1,0 +1,16 @@
+Installation:
+
+(sudo apt-get install python-pip)
+pip install --upgrade autopep8 
+
+
+Commands:
+
+//Applying foramtion directly on the file and ignoring the errors E501
+	//fixes only whitespace
+	autopep8 -i --ignore errors=E501 file.py
+
+
+Full Documentation:
+
+https://github.com/hhatto/autopep8

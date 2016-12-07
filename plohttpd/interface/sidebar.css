@@ -1,0 +1,27 @@
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position: fixed;
+  top: 51px;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  display: block;
+  padding: 10px;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.main {
+  position: fixed;
+  top:51px;
+  bottom: 0;
+  left: 0;
+  z-index: 900;
+  display: block;
+  padding: 10px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}

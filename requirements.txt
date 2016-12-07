@@ -1,0 +1,6 @@
+PyYAML
+mysql-connector-python
+numpy
+scipy
+matplotlib
+shutil

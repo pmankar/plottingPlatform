@@ -1,0 +1,18 @@
+plohttpd:
+    metrics:
+        Dao_PeersPresent:
+            title: "#Peers"
+            valueScale: 60
+        Delta_StallsDuration:
+            title: Stall Duration [s]
+            valueScale: 1000000
+            valueRange: [0, 60]
+        Delta_StallsCount:
+            title: Stalls Count
+    experimentStrings:
+        Transit: Transit WL:{Workload} PQA_MODE:{PQA_MODE} PQA_INTERVAL:{PQA_INTERVAL} H_PLAYABLE:{H_PLAYABLE} S_PLAYABLE:{S_PLAYABLE} FA_INTERVAL:{FA_INTERVAL}
+database:
+    host: 192.168.100.166
+    user: root
+    password: root
+    database: Lab_DavidWinter

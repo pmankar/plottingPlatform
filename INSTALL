@@ -1,0 +1,8 @@
+In order to start the visualization platform you need to install the following software first:
+
+sudo apt-get install python3-yaml python3-scipy python3-numpy python3-mysql.connector python3-socketserver python3-setuptools python3-mysqldb inkscape
+
+after successfully installing the the software you need to browse the plotting platform folder and start 
+python3 plohttpd.py
+
+the website can be accessed by typing localhost:8080

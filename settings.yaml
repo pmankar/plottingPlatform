@@ -1,0 +1,58 @@
+plohttpd:
+    metrics:
+        Dao_NumberIn:
+            title: Incoming Connections
+        Dao_NumberOut:
+            title: Outgoing Connections
+        Dao_PeersPresent:
+            title: "#Peers"
+            valueScale: 60
+        Dao_MUpWorkload:
+            title: Upload Workload
+        Dao_MDownWorkload:
+            title: Download Workload
+        Delta_PeersArriving:
+            title: Peer Arrival Rate [1/min]
+        Delta_StallsDuration:
+            title: Stall Duration [s]
+            valueScale: 1000000
+            valueRange: [0, 60]
+        Delta_StallsCount:
+            title: Stalls Count
+        Delta_PlaybackDuration:
+            title: Playback Duration Malicious [s]
+            query: playback
+            valueScale: -1000000
+        Delta_MConnectionsInitiated:
+            title: Connection Frequency [1/min]
+        MOverheadCount:
+            title: Overhead Count [%]
+            query: overhead
+            valueScale: 0.01
+            valueRange: [0, 100]
+        MOverheadSize:
+            title: Overhead Size [%]
+            query: overhead
+            valueScale: 0.01
+            valueRange: [0, 100]
+        MFlowRatio:
+            title: Flow Ratio
+            valueRange: [0, 1]
+        OnChurnFilter_MSessionLength:
+            title: Session Length [min]
+            valueScale: 1000 * 1000 * 60
+            valueRange: [0, 180]
+        OnChurnFilter_MStartupDelay:
+            title: Startup Delay [s]
+            query: startupDelay
+            valueScale: 1000 * 1000
+            valueRange: [0, 200]
+        OnChurnFilter_MVideoUploadEdge:
+            title: Upload per edge
+    experimentStrings:
+        MSc_Sheip_Dargutev_0: Transit WL:D1 SMOOTH_FA:0 USE_VQM_SCORES:{VQM_SCORES} RECEIPT_INTERVAL:5 LAYER_ASSIGNMENT_INTERVAL:45 RECEIPT_RANDOM_CHECK_PROBABILITY:100 MAX_UP_BW_PERCENTAGE:120 INITIAL_BASE_LAYER_ONLY_PERIOD:0 DEFAULT_PROBABILITY_FOR_REQUEST:30 SCORE_HISTORY_SIZE:10 PQA_MODE:2 PQA_INTERVAL:10 H_PLAYABLE:4 S_PLAYABLE:3 FA_INTERVAL:5
+database:
+    host: 127.0.0.1
+    user: root
+    password: root 
+    database: MSc_SheipDargutev_0

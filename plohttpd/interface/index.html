@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PloHTTPd</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap-3.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="pick-a-color/pick-a-color-1.2.3.min.css" rel="stylesheet">
+
+    <link href="fullscreen.css" rel="stylesheet">
+    <link href="waiting.css" rel="stylesheet">
+    <link href="sidebar.css" rel="stylesheet">
+    <link href="interface.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">PloHTTPd</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <div class="navbar-form navbar-right import"></div>
+          <div class="navbar-form navbar-right experimentlist"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4 col-md-3 sidebar">
+          <div class="panel-group" id="sidebar">
+          </div>
+        </div>
+        <div class="col-sm-8 col-sm-offset-4 col-md-9 col-md-offset-3 main">
+          <div data-help="experimentSelect">
+            <h1>Welcome to the Plotting Plattform</h1>
+            <p>With this tool you can visualize and analyse your simulation data.</p>
+            <p>First you have to select an "Experiment" from the dropdown-menu on the left. If you can not find your Experiment in the list, please select "Userdefined" and type your experiment name manually. Use curly braces to mark your experiment. In the next step, you can define parameters and data to be visualized.</p>
+          </div>
+          <div data-help="parametersSelect">
+            <h1>One click from your visualization!</h1>
+            <p>You have to define values for the parameters, in order to continue to your visualization. You can compare multiple data in one visualization, if you are ready, click on the "Visualize" button. The visualizations can take some time, it depends on the amount of data to be processed. The colors and the scale can be changed in the menu on the right side. By selecting "Abfrage" in the "Export" menu on the right, you can export your experiment and parameterdefined settings. "Ergebnisse" allows you to export experiment, parameters, vector graphics and the corresponding dataset, usefull when working on large amount of data. To export a scalable vector graphic you have to select "SVG" from the "Export" menu. Note, this will export only the graphic you have selected in the tab menu.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="jquery/jquery-2.1.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
+    <script src="d3js/d3.v3.min.js"></script>
+
+    <script src="jquery/jquery.cookie.js"></script>
+    <script src="tinycolor/tinycolor.js"></script>
+    <script src="pick-a-color/pick-a-color-1.2.3.min.js"></script>
+    <script src="DragDrop/drag-drop.min.js"></script>
+    <script src="DragDrop/jquery.dragdrop.js"></script>
+
+    <script src="help.js"></script>
+    <script src="application.js"></script>
+    <script src="fullscreen.js"></script>
+    <script src="waiting.js"></script>
+    <script src="sidebar.js"></script>
+    <script src="filters.js"></script>
+    <script src="query.js"></script>
+    <script src="metrics.js"></script>
+    <script src="experiment.js"></script>
+    <script src="parameters.js"></script>
+    <script src="axes/static.js"></script>
+    <script src="axes/distinct.js"></script>
+    <script src="axes/none.js"></script>
+    <script src="axes.js"></script>
+    <script src="options.js"></script>
+    <script src="exports.js"></script>
+    <script src="visualisation.js"></script>
+    <script>application.loadScripts(["optionControls", "visualisations"]);</script>
+  </body>
+</html>

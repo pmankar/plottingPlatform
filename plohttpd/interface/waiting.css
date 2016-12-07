@@ -1,0 +1,17 @@
+.waiting {
+	padding:0.5em;
+	font-weight:bold;
+}
+.waiting img {
+	margin:10% auto 3% auto;
+	display:block;
+}
+.waiting .progress {
+	margin: 2em 3em;
+}
+.waiting .messages {
+	list-style:none;
+}
+.waiting .messages li {
+	margin: 0.3em;
+}

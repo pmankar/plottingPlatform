@@ -1,0 +1,10 @@
+plohttpd:
+    experimentStrings:
+        Transit E1: Transit E1 WL:{Workload} CFG:Default PEERS:{Peers} HAL:{HAL} PRQ:{PRQ}
+        Transit E1 RIHO: Transit E1 WL:{Workload} CFG:Default PEERS:1400/750/350 HAL:0 PRQ:0 RIHO:{RIHO}
+        Transit E1 RIHO OPT: Transit E1 WL:{Workload} CFG:Default PEERS:1400/750/350 HAL:0 PRQ:0 RIHO:{RIHO} OPT:{OPT}
+database:
+    host: 10.0.22.2
+    user: plotting
+    password: Kdy3tK8zxbyUpwTR
+    database: transit-retro

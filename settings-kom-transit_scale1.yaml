@@ -1,0 +1,56 @@
+plohttpd:
+    metrics:
+        Dao_NumberIn:
+            title: Incoming Connections
+        Dao_NumberOut:
+            title: Outgoing Connections
+        Dao_PeersPresent:
+            title: "#Peers"
+            valueScale: 60
+        Dao_MUpWorkload:
+            title: Upload Workload
+        Dao_MDownWorkload:
+            title: Download Workload
+        Delta_PeersArriving:
+            title: Peer Arrival Rate [1/min]
+        Delta_StallsDuration:
+            title: Stall Duration [s]
+            valueScale: 1000000
+            valueRange: [0, 60]
+        Delta_StallsCount:
+            title: Stalls Count
+        Delta_PlaybackDuration:
+            title: Playback Duration Malicious [s]
+            query: playback
+            valueScale: -1000000
+        Delta_MConnectionsInitiated:
+            title: Connection Frequency [1/min]
+        MOverheadCount:
+            title: Overhead Count [%]
+            query: overhead
+            valueScale: 0.01
+            valueRange: [0, 100]
+        MOverheadSize:
+            title: Overhead Size [%]
+            query: overhead
+            valueScale: 0.01
+            valueRange: [0, 100]
+        MFlowRatio:
+            title: Flow Ratio
+            valueRange: [0, 1]
+        OnChurnFilter_MSessionLength:
+            title: Session Length [min]
+            valueScale: 1000 * 1000 * 60
+            valueRange: [0, 180]
+        OnChurnFilter_MStartupDelay:
+            title: Startup Delay [s]
+            query: startupDelay
+            valueScale: 1000 * 1000
+            valueRange: [0, 200]
+    experimentStrings:
+        Transit E1: Transit E1 WL:{Workload} CFG:{Configuration} PEERS:{Peers}
+database:
+    host: 10.0.22.2
+    user: plotting
+    password: Kdy3tK8zxbyUpwTR
+    database: transit_scale1
